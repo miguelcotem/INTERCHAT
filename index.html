@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Animais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <h1>InterPet</h1>
+        <button id="themeToggle">Mudar Tema</button>
+    </header>
+
+    <div class="animal-container">
+        <h2>Cadastro de Animais</h2>
+        <form id="animalForm">
+            <label for="name">Nome do Animal:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="breed">Raça:</label>
+            <input type="text" id="breed" name="breed" required>
+            
+            <label for="color">Cor:</label>
+            <input type="text" id="color" name="color" required>
+            
+            <label>Serviço:</label>
+            <div class="service-options">
+                <label>
+                    <input type="checkbox" name="service" value="Banho"> Banho
+                </label>
+                <label>
+                    <input type="checkbox" name="service" value="Tosa"> Tosa
+                </label>
+                <label>
+                    <input type="checkbox" name="service" value="Banho e Tosa"> Banho e Tosa
+                </label>
+            </div>
+            
+            <button type="submit">Cadastrar Animal</button>
+        </form>
+        
+        <h3>Animais Cadastrados:</h3>
+        <ul id="animalList" class="animal-list"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
