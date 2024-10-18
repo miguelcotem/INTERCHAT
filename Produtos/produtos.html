@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter Pet</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+    <header>
+        <h1>Inter Pett</h1>
+        <button id="theme-toggle">Mudar Tema</button>
+    </header>
+    
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Produtos</a>
+        <a href="#">Sobre Nós</a>
+        <a href="#">Contato</a>
+        <a href="#">Carrinho</a>
+    </nav>
+    
+    <div class="container">
+        <div class="product">
+            <h2>Ração para Cães Adultos - Sabor Frango</h2>
+            <p>Especialmente formulada para atender às necessidades nutricionais dos cães adultos. Contém proteínas de alta qualidade e vitaminas essenciais.</p>
+            <p class="price">R$ 89,90</p>
+            <button onclick="addToCart('Ração para Cães Adultos - Sabor Frango')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <h2>Ração para Gatos Filhotes - Sabor Salmão</h2>
+            <p>Desenvolvida para promover o crescimento saudável dos filhotes de gato. Rica em ácidos graxos e minerais para um desenvolvimento ideal.</p>
+            <p class="price">R$ 69,90</p>
+            <button onclick="addToCart('Ração para Gatos Filhotes - Sabor Salmão')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <h2>Ração para Cães Seniores - Sabor Carne</h2>
+            <p>Fórmula especial para cães seniores, com baixo teor de gordura e ingredientes de fácil digestão para suportar a saúde das articulações.</p>
+            <p class="price">R$ 99,90</p>
+            <button onclick="addToCart('Ração para Cães Seniores - Sabor Carne')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <h2>Ração para Gatos Adultos - Sabor Atum</h2>
+            <p>Uma ração saborosa e nutritiva para gatos adultos, com ingredientes de qualidade superior para manter seu felino saudável e feliz.</p>
+            <p class="price">R$ 79,90</p>
+            <button onclick="addToCart('Ração para Gatos Adultos - Sabor Atum')">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Inter Pet. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
